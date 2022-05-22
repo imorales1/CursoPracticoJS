@@ -30,7 +30,11 @@ function CalcularPerimetroCuadrado() {
 }
 
 function CalcularAreaCuadrado(medida) {
-    const area = document.getElementById("TxtArea");
-    area.value = medida*medida;
+    //const area = document.getElementById("TxtArea");
+    //area.value = medida*medida;
+    //document.getElementById("TxtArea").innerText("holaMundo");
+    var resultado = document.getElementById("TxtArea");
+    
+    TxtArea.value = medida*medida;
     alert("El área del cuadrado es " + medida*medida);
 }
