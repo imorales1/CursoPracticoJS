@@ -21,10 +21,10 @@ function CalcularPerimetroCuadrado() {
     const input = document.getElementById("TxtMedida");
     var resultado = document.getElementById("TxtResultado");
     const value = input.value;
-
+    html.documentById("TxtMedida").innerText("hola");
     const perimetro = perimetroCuadrado(value);
     //TxtResultado.innerHTML(perimetro);
-    resultado.value = perimetro;
+    //resultado.value = perimetro;
     //input.value = perimetroCuadrado(value);
     alert("El perimetro del cuadrado es  " + perimetro);
 }
