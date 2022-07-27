@@ -7,8 +7,25 @@
     <title>Manipulación básica del DOM - Curso Práctico de JavaScript</title>
 </head>
 <body>
-    <h1>Manipulación del DOM básica.</h1>
+    <h1 class="verde">Manipulación del DOM básica.</h1>
 
+    <p>Esto es un párrafo</p>
+    <p class="parrafito">Esto es un párrafo.</p>
+    <p id="pid">Esto es párrafo con ID.</p>
+
+    <br>
+    
+    <form  id="form">
+        <input id="calculo1" placeholder="Escriba algo aquí" value="456"/>
+        <input onchange="cambioInput()" id="calculo2" placeholder="Escriba algo aquí" value=""/>
+        <!-- <button id="btnCalcular" onclick="Boton()">Calcular</button>   -->
+        <button id="btnCalcular">Calcular</button>
+
+        <p id="result"></p>
+    </form>
+
+    <br><br>
+    <input type="text">
     <button type="button" onclick="decirhola()">Hola</button>
     <script src="./script.js"></script>
 </body>
