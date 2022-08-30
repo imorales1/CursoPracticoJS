@@ -24,7 +24,9 @@ console.log({
 
 //h1.getAttribute('pantalla')
 //console.log(h1.getAttribute('pantalla'));
-//h1.setAttribute('class', 'rojo')
+//h1.setAttribute('class', 'rojo');
+//h1.classList.add('rojo');
+//h1.classList.remove('verde');
 
 //h1.classList.add('rojo');
 //h1.classList.remove('verde');
@@ -54,17 +56,18 @@ const btn = document.querySelector('#btnCalcular');
 const pResult = document.querySelector('#result');
 const form = document.querySelector('#form');
 
+//  escuchar eventos de html desde js
 //btn.addEventListener('click', btnOnClick);
-form.addEventListener('submit', sumarInputVlues);
+form.addEventListener('submit', sumarInputValues);
 
 function cambioInput() {
     console.log('cambio el input');
 }
 
-function sumarInputVlues(event) {
+function sumarInputValues(event) {
     console.log({event});
     event.preventDefault();
-    const sumaInputs = input1.value  + input2.value;
+    const sumaInputs = parseInt(input1.value ) + parseInt(input2.value);
     pResult.innerText= "Resultado: " + sumaInputs;
     console.log('click del boton');
     console.log(sumaInputs);
